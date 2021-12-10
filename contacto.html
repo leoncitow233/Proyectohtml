@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/estilos.css">
+    <title>Pet Shop</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html" class="logo"
+        ><img class="logo" src="../img/logoo.jpg" alt="logo"
+      /></a>
+      <nav class="nav">
+        <!-- lista no ordenada -->
+
+        <ul class="nav_menu">
+          <li class="nav_link">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="nav_link">
+            <a href="productos.html">Productos</a>
+          </li>
+          <li class="nav_link">
+            <a href="quienessomos.html">Quienes somos</a>
+          </li>
+          <li class="nav_link">
+            <a href="contacto.html">Contacto</a>
+          </li>
+          <li class="nav_link">
+            <a href="ofertas.html">Ofertas</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+      <!-- practicando formularios -->
+            <p>Para recibir Newsletters complete el formulario</p>
+      <form action="servidor.php"method="post">
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" placeholder="nombre"><br><br>
+          <label for="apellido">Apellido</label>
+          <input type="text" lname="Apellido" placeholder="apellido"><br><br>
+          <label for="telefono">Telefono</label>
+          <input type="text" phone="telefono" placeholder="telefono"><br><br>
+          <label for="mail">Mail</label>
+          <input type="text" mail="mail" placeholder="usuario@servidor.com"><br><br>
+          <h3>Dejanos tu comentario</h3>
+          <textarea name="cometario"></textarea><br>
+          <input type="submit" value="Enviar formulario">
+          <input type="reset" value="Borrar formulario">
+          <footer>
+            <hr />
+            <p style="text-align: center">Creado por Beth Lagos</p>
+          </footer>
+</body>
+</html>

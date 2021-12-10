@@ -1,0 +1,243 @@
+body {
+  background-color: bisque;
+}
+/* lista no ordenada y header */
+.header {
+  display: flex;
+  justify-content: revert;
+  align-items: center;
+}
+@media screen and (max-height: 1000px) and (max-width: 1000px) {
+  .header {
+    display: grid;
+  }
+}
+.nav {
+  width: 500px;
+}
+.nav_menu {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.logo {
+  width: 100px;
+  border-radius: 50px;
+  margin-right: 350px;
+}
+@media screen and (max-height: 1000px) and (max-width: 1000px) {
+  .logo {
+    width: 50px;
+    margin-right: 200px;
+  }
+}
+.nav_menu li a {
+  text-decoration: none;
+  color: rgb(63, 60, 60);
+}
+@media screen and (max-height: 1000px) and (max-width: 1000px) {
+  .nav_menu {
+    display: flex;
+    flex-direction: row;
+    margin-right: 150px;
+  }
+}
+@media screen and (max-height: 1000px) and (max-width: 1000px) {
+  .nav {
+    margin-right: 150px;
+  }
+  .nav li a {
+    text-decoration: none;
+    color: rgb(230, 15, 15);
+    font-size: 12px;
+  }
+}
+/* estilos del index imagenes .Class*/
+.bordesRedondo img {
+  border-radius: 30px;
+  width: 400px;
+  height: 200px;
+  padding: 10px;
+  margin: 10px;
+}
+.bordesRedondo {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media screen and (max-height: 1000px) and (max-width: 1000px) {
+  .bordesRedondo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 130px;
+  }
+  .bordesRedondo img {
+    width: 100px;
+    height: 100px;
+  }
+}
+.textoPet {
+  margin-left: 20px;
+}
+.textoAlim {
+  margin-left: 20px;
+}
+.textoOfer {
+  margin-left: 20px;
+}
+/* BARRA DE BUSQUEDA INDEX */
+.sidenav {
+  height: 100%;
+  width: 180px;
+  position: fixed;
+  z-index: 1;
+  top: 122px;
+  left: 0;
+  background-color: rgba(250, 191, 119, 0.514);
+  overflow-x: hidden;
+  padding-top: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+.textoAlimentos {
+  font-size: 25px;
+  margin-left: 15px;
+  color: #2f4b86;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #7c7c7c;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px;
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 1000px) and (max-width: 1000px) {
+  .sidenav {
+    padding-top: 15px;
+    width: 100px;
+  }
+  .sidenav a {
+    font-size: 14px;
+  }
+  .sidenav p {
+    font-size: 15px;
+  }
+}
+
+/* Page productos  */
+.containerProductos {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+#hover :hover {
+  width: 300px;
+  transition: width 1s;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 250px;
+}
+.card img {
+  width: 200px;
+  height: 200px;
+}
+h2 {
+  color: rgb(175 140 193);
+}
+
+@media screen and (max-height: 1000px) and (max-width: 1000px) {
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(231, 35, 35, 0.2);
+    transition: 0.3s;
+    width: 200px;
+  }
+  .card img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.imgEuka1 {
+  margin-left: 20px;
+}
+@media screen and (max-height: 1000px) and (max-width: 1000px) {
+  .containerProductos {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+
+#articulos {
+  display: flex;
+  justify-content: space-around;
+}
+@media screen and (max-height: 1000px) and (max-width: 1000px) {
+  #articulos {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+  }
+  #articulos img {
+    height: 70px;
+    width: 70px;
+  }
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 20px 5px;
+}
+
+/* estilos quienes somos bio #ID*/
+#quienesSomos {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  background-color: #e3cfe7a1;
+  line-height: 1.6;
+  color: grey;
+}
+/* The animation code */
+@keyframes example {
+  from {
+    background-color: rgb(236, 196, 120);
+  }
+  to {
+    background-color: rgb(226, 156, 99);
+  }
+}
+
+/* The element to apply the animation to */
+#quienesSomos {
+  background-color: rgb(232, 212, 238);
+  animation-name: example;
+  animation-duration: 4s;
+}
+/* oferta img */
+.old {
+  width: 400px;
+  height: 420px;
+}
+.sieger {
+  width: 400px;
+  height: 420px;
+}
+.proPlan {
+  width: 250px;
+  height: 400px;
+}
